@@ -1205,6 +1205,15 @@ it('Allows selection of Feathercoin', function(done) {
     };
     testNetwork(done, params);
 });
+it('Allows selection of FIO', function(done) {
+    var params = {
+        selectText: "FIO - Foundation for Interwallet Operability",
+        phrase: "valley alien library bread worry brother bundle hammer loyal barely dune brave",
+        firstPubKey: "FIO5kJKNHwctcfUM5XZyiWSqSTM5HTzznJP9F3ZdbhaQAHEVq575o",
+        firstPrivKey: "5Kbb37EAqQgZ9vWUHoPiC2uXYhyGSFNbL6oiDp24Ea1ADxV1qnu",
+    };
+    testNetwork(done, params);
+});
 it('Allows selection of Firstcoin', function(done) {
     var params = {
         selectText: "FRST - Firstcoin",
@@ -1672,6 +1681,26 @@ it('Allows selection of Stratis Test', function(done) {
         firstAddress: "TRLWm3dye4FRrDWouwYUSUZP96xb76mBE3",
         firstPubKey: "0269cea528e4ed01b44729287c831fe1889b196fee6202956a7e5c9486c3bc5c00",
         firstPrivKey: "VLx3VXEsVzWVeZjHvrgCJ8N1H7JCEWTSHiEGsYUEZCedHR6yBqDU",
+    };
+    testNetwork(done, params);
+});
+it('Allows selection of Sugarchain', function(done) {
+    var params = {
+        selectText: "SUGAR - Sugarchain",
+        phrase: "abandon abandon ability",
+        firstAddress: "SYnd31fYr39VgKju87Vz1sYBmEeHg5cudk",
+        firstPubKey: "035bc9fa22eff2246ec07bb09c9e32f5f9fee517b4f49a8f117508f8fb41905b25",
+        firstPrivKey: "L2G3axGdZv5EV8osAsBPMese74i4dTHaGvxDh7DsRF5Ky6hKkPDY",
+    };
+    testNetwork(done, params);
+});
+it('Allows selection of Sugarchain Testnet', function(done) {
+    var params = {
+        selectText: "TUGAR - Sugarchain Testnet",
+        phrase: "abandon abandon ability",
+        firstAddress: "TkoRzLZQyaY88dAACNVwUFMYekR7pv6CbY",
+        firstPubKey: "035bc9fa22eff2246ec07bb09c9e32f5f9fee517b4f49a8f117508f8fb41905b25",
+        firstPrivKey: "cSd33sGUzymVeaH8ZGzWiyNhjJ1UHuPGLy6goXgNvMjLDqioARWW",
     };
     testNetwork(done, params);
 });
@@ -2198,21 +2227,41 @@ it('Allows selection of EtherCore', function(done) {
 });
 it('Allows selection of RBTC - RSK', function(done) {
     var params = {
-        selectText: "RBTC - RSK",
+        selectText: "R-BTC - RSK",
         phrase: "abandon abandon ability",
-        firstAddress: "RGtz5TDdtviAZ9haz1YAUNQzcGVFm5bQrP",
-        firstPubKey: "0219d9b5087ab68edc8a714969d8cb70e7159417b47a05932b227e6f417c7962b9",
-        firstPrivKey: "UsiDPMcpYqCwtzGXo4wiPZp7cwBaKdmbmseioTc1rFQsg21adFc8",
+        firstAddress: "0x37CA764c4b2fe819108448b80d2F35921b035931",
+        firstPubKey: "0x0219d9b5087ab68edc8a714969d8cb70e7159417b47a05932b227e6f417c7962b9",
+        firstPrivKey: "0x6e6f48cc422825f7fd68f2200d3dde757849f15342f252eeb0bc4ebc46089fe1",
     };
     testNetwork(done, params);
 });
 it('Allows selection of tRBTC - RSK Testnet', function(done) {
     var params = {
-        selectText: "tRBTC - RSK Testnet",
+        selectText: "tR-BTC - RSK Testnet",
         phrase: "abandon abandon ability",
-        firstAddress: "RHkrWgnSdJHxQAqEsMErhUUa4icXY6xUUC",
-        firstPubKey: "03f77eb7bd83e92ef47be1abddae7f71fb0bc8a7a1ee4b193662a86ed2705ffc5b",
-        firstPrivKey: "UpqfuSEDKoacrPh4wMV4sJZqCB6DJfYe81oWBr4eb7y9FWQWoo2A",
+        firstAddress: "0x176484B5a155Fe802aCB26055eb1c193D5A576d5",
+        firstPubKey: "0x03f77eb7bd83e92ef47be1abddae7f71fb0bc8a7a1ee4b193662a86ed2705ffc5b",
+        firstPrivKey: "0x18c2400d2f818d28b80d0e31235873bfeef644fc45fd702f54ae0d422cff6ab3",
+    };
+    testNetwork(done, params);
+});
+it('Allows selection of Argoneum', function(done) {
+    var params = {
+        selectText: "AGM - Argoneum",
+        phrase: "abandon abandon ability",
+        firstAddress: "MWgLPvJkaJwH6hrXFs1MimAC4FwC1kYRhe",
+        firstPubKey: "0348e5252045fee1d3b1e5bce25dbc16284d5b6c3bfff9c305d4ffa6078c16f3f8",
+        firstPrivKey: "VJXpuMEFnK8USLyo5tgF7M4cBXU44U8MUor1KRTQ6t9DVno9AAgg",
+    };
+    testNetwork(done, params);
+});
+it('Allows selection of CranePay', function(done) {
+    var params = {
+        selectText: "CRP - CranePay",
+        phrase: "abandon abandon ability",
+        firstAddress: "CcUHPqgmef1BmgWFa9g3YNc8scgVXVh8ip",
+        firstPubKey: "0392af9ea9dc78170c6f68c50bac926f960e50769295f539ac6382a3af2b928740",
+        firstPrivKey: "KHTCAvKHKg1WdLoDSg3VjjyZK5Wk1ihzJENpp2YMb1RmAxrCZrXX",
     };
     testNetwork(done, params);
 });

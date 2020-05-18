@@ -163,6 +163,36 @@ libs.bitcoin.networks.regtest.p2wshInP2sh = {
     scriptHash: 0xc4,
     wif: 0xef
 };
+                               
+libs.bitcoin.networks.cranepay.p2wpkhInP2sh = {
+    baseNetwork: "cranepay",
+    messagePrefix: '\x18Bitcoin Signed Message:\n',
+    bech32: 'cp',
+    bip32: {
+        public: 0x049d7cb2,
+        private: 0x049d7878
+    },
+    pubKeyHash: 28,
+    scriptHash: 10,
+    wif: 123
+};
+
+// bech32
+libs.bitcoin.networks.cranepay.p2wpkh = {
+    baseNetwork: "cranepay",
+    messagePrefix: '\x18Bitcoin Signed Message:\n',
+    bech32: 'cp',
+    bip32: {
+        public: 0x04b24746,
+        private: 0x04b2430c
+    },
+    pubKeyHash: 28,
+    scriptHash: 10,
+    wif: 123
+};
+
+
+
 
 libs.bitcoin.networks.litecoin.p2wpkh = {
     baseNetwork: "litecoin",
@@ -681,6 +711,58 @@ libs.bitcoin.networks.deeponion.p2wpkhInP2sh = {
 	pubKeyHash: 0x1f,
 	scriptHash: 0x4e,
 	wif: 0x9f
+};
+
+libs.bitcoin.networks.sugarchain.p2wpkh = {
+	baseNetwork: "sugarchain",
+	messagePrefix: '\x1DSugarchain Signed Message:\n',
+	bech32: 'sugar',
+	bip32: {
+		public: 0x04b24746,
+		private: 0x04b2430c
+	},
+	pubKeyHash: 0x3f,
+	scriptHash: 0x7d,
+	wif: 0x80
+};
+
+libs.bitcoin.networks.sugarchain.p2wpkhInP2sh = {
+	baseNetwork: "sugarchain",
+	messagePrefix: '\x1DSugarchain Signed Message:\n',
+	bech32: 'sugar',
+	bip32: {
+		public: 0x049d7cb2,
+		private: 0x049d7878
+	},
+	pubKeyHash: 0x3f,
+	scriptHash: 0x7d,
+	wif: 0x80
+};
+
+libs.bitcoin.networks.sugarchaintestnet.p2wpkh = {
+	baseNetwork: "sugarchaintestnet",
+	messagePrefix: '\x18Sugarchain Signed Message:\n',
+	bech32: 'tugar',
+	bip32: {
+		public: 0x045f1cf6,
+		private: 0x045f18bc
+	},
+	pubKeyHash: 0x42,
+	scriptHash: 0x80,
+	wif: 0xef
+};
+
+libs.bitcoin.networks.sugarchaintestnet.p2wpkhInP2sh = {
+	baseNetwork: "sugarchaintestnet",
+	messagePrefix: '\x18Sugarchain Signed Message:\n',
+	bech32: 'tugar',
+	bip32: {
+		public: 0x044a5262,
+		private: 0x044a4e28
+	},
+	pubKeyHash: 0x42,
+	scriptHash: 0x80,
+	wif: 0xef
 };
 
 })();
